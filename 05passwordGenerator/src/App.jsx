@@ -25,7 +25,7 @@ function App() {
       pass += str.charAt(char);
     }
     setPassword(pass);
-  }, [length, numberAllowed, charAllowed, setPassword]);
+  }, [length, numberAllowed, charAllowed, capitalAllowed, setPassword]);
 
   // * to copy the generated password to the clipboard
   const copyPasswordtoClipBoard = useCallback(() => {
@@ -105,7 +105,7 @@ function App() {
               className="cursor-pointer"
               id="capInput"
               onChange={() => {
-                setCharAllowed((prev) => !prev);
+                setCapitalAllowed((prev) => !prev);
               }}
             />
             <label htmlFor="capInput">Capitalize</label>
