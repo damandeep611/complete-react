@@ -1,7 +1,7 @@
 import React from "react";
-import IndexBox from "./IndexBox";
-import useCurrencyInfo from "../hooks/useCurrencyInfo";
+import useCurrencyInfo from "../../hooks/useCurrencyInfo";
 import { useState } from "react";
+import InputBox from "../InputBox/InputBox";
 
 function CurrencyConvert() {
   const [amount, setAmount] = useState(0);
@@ -40,7 +40,7 @@ function CurrencyConvert() {
             }}
           >
             <div className="w-full mb-1">
-              <IndexBox
+              <InputBox
                 label="From"
                 amount={amount}
                 currencyOptions={options}
@@ -63,7 +63,7 @@ function CurrencyConvert() {
               </button>
             </div>
             <div className="w-full mt-1 mb-4">
-              <IndexBox
+              <InputBox
                 label="To"
                 amount={convertedAmount}
                 currencyOptions={options}

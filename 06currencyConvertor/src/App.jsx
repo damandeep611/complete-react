@@ -1,13 +1,9 @@
 import "./App.css";
+import CurrencyConvert from "./components/CurrencyConvert/CurrencyConvert";
 
-import CurrencyConvert from "./components/CurrencyConvert";
 
 function App() {
-  return (
-    <div>
-      <CurrencyConvert />
-    </div>
-  );
+  return <></>;
 }
 
 export default App;

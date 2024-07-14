@@ -1,7 +1,7 @@
 import React from "react";
 import { useId } from "react";
 
-function IndexBox({
+function InputBox({
   label,
   amount,
   onAmountChange,
@@ -53,4 +53,4 @@ function IndexBox({
   );
 }
 
-export default IndexBox;
+export default InputBox;
