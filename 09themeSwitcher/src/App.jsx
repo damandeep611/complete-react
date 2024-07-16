@@ -3,6 +3,8 @@ import "./App.css";
 import { ThemeProvider } from "./contexts/Theme";
 import ThemeBtn from "./components/ThemeBtn";
 import Card from "./components/Card";
+import ProfileCard from "./components/ProfileCard";
+import Accordion from "./components/Accordion";
 
 function App() {
   const [themeMode, setThemeMode] = useState("light");
